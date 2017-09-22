@@ -7,7 +7,7 @@ if($_GET["project"] == "2"){
 } else {
     $dir = "/u/gheith/public/cs439h_f17_p4/latest/";
 }
-$test = $_GET["test"];
+$test = $_GET["cc"];
 $files = scandir($dir);
 foreach ($files as $file){
     if($file != "." && $file != ".."){
