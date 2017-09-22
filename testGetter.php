@@ -9,8 +9,9 @@ if($_GET["project"] == "2"){
 }
 $test = $_GET["test"];
 $files = scandir($dir);
+echo "".$file;
 foreach ($files as $file){
-    echo "".$file;
+
     if($file != "." && $file != ".."){
         if($test == ""){
             if(substr($file, -3) == ".cc"){
