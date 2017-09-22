@@ -12,7 +12,7 @@ $files = scandir($dir);
 echo "".$test;
 foreach ($files as $file){
     echo "\n".$file;
-    if($file == $test){
+    if(substr($file,6) == substr($test,6)){
                 echo file_get_contents($dir . $file);
             }
     if($file != "." && $file != ".."){
