@@ -3,10 +3,12 @@
 <script type="text/javascript">
 //AJAX FROM W3schools: https://www.w3schools.com/xml/ajax_intro.asp
 function getBaseURL() {
-    if(document.getElementById("projects").value == "9"){
-        return "testGetter.php?project=9";
+    if(document.getElementById("projects").value == "2"){
+        return "testGetter.php?project=2";
+    } else if(document.getElementById("projects").value == "3"){
+        return "testGetter.php?project=3";
     } else {
-        return "testGetter.php?project=a";
+        return "testGetter.php?project=4";
     }
 }
 function loadOptions() {
