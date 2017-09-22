@@ -14,5 +14,6 @@ chmod o+x *
 
 chmod o+r *
 
+Test
 
 These make all the files executable and readable so you can access them by URL.
