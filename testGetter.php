@@ -10,7 +10,9 @@ if($_GET["project"] == "2"){
 $test = $_GET["test"];
 $files = scandir($dir);
 foreach ($files as $file){
-    echo file_get_contents($dir . $file);
+    if($file == $test){
+                echo file_get_contents($dir . $file);
+            }
     if($file != "." && $file != ".."){
         if($test == ""){
             if(substr($file, -3) == ".cc"){
@@ -18,9 +20,7 @@ foreach ($files as $file){
                 echo "<option value='" . $data . "'>" . $data . "</option>";
             }
         } else {
-            if($file == $test){
-                echo file_get_contents($dir . $file);
-            }
+            
         }
     }
 }
