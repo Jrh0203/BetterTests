@@ -1,4 +1,12 @@
 <?php
+function debug_to_console( $data ) {
+    $output = $data;
+    if ( is_array( $output ) )
+        $output = implode( ',', $output);
+
+    echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
+}
+console("test");
 $dir = "";
 if($_GET["project"] == "2"){
     $dir = "/u/gheith/public/cs439h_f17_p2/latest/";
@@ -7,7 +15,7 @@ if($_GET["project"] == "2"){
 } else {
     $dir = "/u/gheith/public/cs439h_f17_p4/latest/";
 }
-$test = $_GET["cc"];
+$test = $_GET["test"];
 $files = scandir($dir);
 foreach ($files as $file){
     if($file != "." && $file != ".."){
