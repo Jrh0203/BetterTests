@@ -12,6 +12,9 @@ $files = scandir($dir);
 echo "".$test;
 foreach ($files as $file){
     echo "\n".$file;
+    if($file == $test){
+                echo file_get_contents($dir . $file);
+            }
     if($file != "." && $file != ".."){
         if($test == ""){
             if(substr($file, -3) == ".cc"){
@@ -19,9 +22,7 @@ foreach ($files as $file){
                 echo "<option value='" . $data . "'>" . $data . "</option>";
             }
         } else {
-            if($file == $test){
-                echo file_get_contents($dir . $file);
-            }
+            
         }
     }
 }
