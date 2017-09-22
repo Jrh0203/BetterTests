@@ -9,9 +9,9 @@ if($_GET["project"] == "2"){
 }
 $test = $_GET["test"];
 $files = scandir($dir);
-echo "".$test;
+echo "".substr($test,6);
 foreach ($files as $file){
-    echo "\n".$file;
+    echo "\n".$substr($file,6);
     if(substr($file,6) == substr($test,6)){
                 echo file_get_contents($dir . $file);
             }
