@@ -9,7 +9,7 @@ if($_GET["project"] == "2"){
 }
 $test = $_GET["test"];
 $files = scandir($dir);
-echo "".$file;
+echo "".$test;
 foreach ($files as $file){
 
     if($file != "." && $file != ".."){
