@@ -99,17 +99,18 @@ a{
     <option value = "Q">BANANA</option>
 </select>
 <input type="button" onclick="getTest();getOK()" value = "Grab Test"></input>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 <br />
 <table>
     <tr>
         <td>
             <table id="myTable">
-            <td>
-                <textarea readonly id="OK"></textarea>
-            </td>
               <tr class="header">
-                <th style="width:60%;">Name</th>
-                <th style="width:40%;">Country</th>
+                <th style="width:60%;">Commit</th>
+                <th style="width:10%;">Passing</th>
+                <th style="width:10%;">Attempted</th>
+                <th style="width:10%;">No Compile</th>
+                <th style="width:10%;">Temp</th>
               </tr>
               <tr>
                 <td>Alfreds Futterkiste</td>
@@ -129,11 +130,13 @@ a{
               </tr>
             </table>
         </td>
-        
+        <td>
+            <textarea readonly id="OK"></textarea>
+        </td>
     </tr>
 </table>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
 
 
 
