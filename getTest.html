@@ -89,9 +89,8 @@ textarea{
 a{
     color:#FF8800;
 }
-.part {
-    position:absolute;
-    top:0px;
+td, tr{
+    border-bottom: 1px solid #ddd;
 }
 </style>
 <select id = "projects" onchange = "loadOptions();">
@@ -107,7 +106,7 @@ a{
 <br />
 <table>
     <tr>
-        <td class="part">
+        <td>
             <table id="myTable">
               <tr class="header">
                 <th style="width:40%;">Commit</th>
@@ -134,7 +133,7 @@ a{
               </tr>
             </table>
         </td>
-        <td class="part">
+        <td>
             <textarea readonly id="OK"></textarea>
         </td>
     </tr>
