@@ -3,7 +3,7 @@
     use strict;
     use warnings;
 
-    my $dir = '/tmp';
+    my $dir = '~gheith/public/cs439h_f17_p3/latest/';
 
     opendir(DIR, $dir) or die $!;
 
