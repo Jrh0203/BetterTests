@@ -1,9 +1,11 @@
 <?php
 $dir = "";
-if($_GET["project"] == "9"){
-    $dir = "/u/gheith/public/cs429h_s17_p9/";
+if($_GET["project"] == "2"){
+    $dir = "/u/gheith/public/cs439h_f17_p2/latest/";
+} else if($_GET["project"] == "3"){{
+    $dir = "/u/gheith/public/cs439h_f17_p3/latest/";
 } else {
-    $dir = "/u/gheith/public/cs429h_s17_pa/";
+    $dir = "/u/gheith/public/cs439h_f17_p4/latest/";
 }
 $test = $_GET["test"];
 $files = scandir($dir);
